@@ -1,9 +1,7 @@
 version: '3'
 services:
   webapp:
-    build:
-      context: docker
-      dockerfile: Dockerfile
+    image: imanilchaudhari/docker-ubuntu:22.04
     restart: 'no'
     ports:
       - '8018:80'

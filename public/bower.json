@@ -1,0 +1,22 @@
+{
+  "name": "laravel",
+  "homepage": "https://github.com/imanilchaudhari/laravel-app",
+  "authors": [
+    "Anil Chaudhari <imanilchaudhari@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "admin-lte": "^2.4.0",
+    "jquery": "^2.1.3"
+  }
+}

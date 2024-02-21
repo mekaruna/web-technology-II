@@ -13,7 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['namespace' => 'App\Http\Controllers'], function()
-{
+Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/', 'HomeController@index')->name('home.index');
+});
+
+Route::group([
+    'prefix' => 'admin',
+    'namespace' => 'App\Http\Controllers\Admin'
+], function () {
+    Route::get('/', 'HomeController@index')->name('admin.home');
+    Route::resource('dishes', 'DishController');
+    Route::resource('banners', 'BannerController');
+    Route::resource('chefs', 'ChefController');
+    Route::resource('events', 'EventController');
+    Route::resource('testimonials', 'TestimonialController');
 });
